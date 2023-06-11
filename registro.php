@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrarme - Pastelería</title>
+    <link rel="shortcut icon" href="">
+    <link rel="stylesheet" type="text/css" href="css/diseño.css" media="screen" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;1,400;1,600;1,700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="lds-ring loader" id="loader">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+    <header>
+        <nav>
+            <section class="contenedor-header nav">
+                <div class="logo">
+                    <img src="img/logo_1.jpg" alt="">
+                </div>
+                <div class="links">
+                    <a href="index.html">Inicio</a>
+                    <a href="pasteles.html">Pasteles</a>
+                    <a href="pedidos.html">Pedir
+                    </a>
+                </div>
+            </section>
+        </nav>
+    </header>
+    <main class="fondo-dos">
+        </section>
+        <section>
+            <div class="titulo">
+                <h1>Bienvenidos a la Mejor Pastelería</h1>
+                <h1>"Dulces Momentos"</h1>
+            </div>
+        </section>
+
+        <form class="letra-form" method="POST">
+            <div class="formulario">
+                <h4><a href="cuenta.php">Si tienes una cuenta, inicia sesión aquí...</a></h4>
+                <h4>Registrate</h4>
+                <div class="grupo">
+                    <input type="text" name="Nombre" id="" required><span class="barra"></span>
+                    <label>Nombre</label>
+                </div>
+                <div class="grupo">
+                    <input type="text" name="Apellidos" id="" required><span class="barra"></span>
+                    <label>Apellidos</label>
+                </div>
+                <div class="grupo">
+                    <input type="text" name="Correo" id="" required><span class="barra"></span>
+                    <label>Email</label>
+                </div>
+                <div class="grupo">
+                    <input type="text" name="nombreUsuario" id="" required><span class="barra"></span>
+                    <label>Nombre de Usuario</label>
+                </div>
+                <div class="grupo">
+                    <input type="text" name="Contraseña" id="" required><span class="barra"></span>
+                    <label>Contraseña</label>
+                </div>
+                <button type="submit" name="Registrarme" >Registrarme</button>
+            </div>
+        </form>
+
+    <?php
+        include("registrar.php");
+    ?>
+
+    </main>
+    <footer>
+        <div class="contenedor-footer">
+            <div class="content-foo">
+                <div>
+                    <h3>Ubicados en...</h3>
+                </div>
+                <div>
+                    <p>Paseo de las Minas</p>
+                    <p>Calle: Av.Titano, S/N</p>
+                </div>
+            </div>
+            <div class="content-foo">
+                <div>
+                    <h3>Ordena tu pedido al...</h3>
+                </div>
+                <div>
+                    <p>81 10 08 38 37</p>
+                </div>
+            </div>
+            <div class="content-foo">
+                <div>
+                    <h3>Horario de Servicio...</h3>
+                </div>
+                <div>
+                    <p>De Lunes a Viernes</p>
+                    <p>10:00 a.m a 9:00 p.m</p>
+                </div>
+            </div>
+            <div>
+                <box-icon name='facebook-square' type='logo' animation='burst' color='#0032ff'></box-icon>
+                <box-icon name='instagram-alt' type='logo' animation='burst' color='#ff4b00'></box-icon>
+                <box-icon name='whatsapp-square' type='logo' animation='burst' color='#00c832'></box-icon>
+            </div>
+        </div>
+        </div>
+        <h2 class="titulo-final">&copy; Design | Equipo Dinamita</h2>
+        <p class="content-titulo-final">Derechos Reservados</p>
+    </footer>
+    <script src="https://unpkg.com/boxicons@latest/dist/boxicons.js"></script>
+    <script src="https://kit.fontawesome.com/bc362696c7.js" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+    <script src="animaciones.js"></script>
+
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+    <title>Calcula tu pedido</title>
+    <link rel="shortcut icon" href="">
+    <link rel="stylesheet" type="text/css" href="css/diseño.css" media="screen" />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;1,400;1,600;1,700&display=swap"
+        rel="stylesheet">
+</head>
+<script>
+    function CalculaPrecioTotal() {
+        var Precio = parseFloat(document.getElementById('txt_PreProducto').value);
+        var PrecioConImpuesto = 1.16 * Precio;
+        var PrecioTotal = PrecioConImpuesto + 30;
+        document.getElementById('lbl_Impuestos').textContent = 'El impuesto del producto es:  ' + (0.16 * Precio);
+        document.getElementById('lbl_MontoPagar').textContent = 'El total a pagar sería de: ' + PrecioTotal;
+    }
+</script>
+
+<body>
+
+    <header>
+        <nav>
+            <section class="contenedor-header nav">
+                <div class="logo">
+                    <img src="img/logo_1.jpg" alt="">
+                </div>
+                <div class="links">
+                    <a href="index.html">Inicio</a>
+                    <a href="pedidos.html">Pedir</a>
+                    <a href="pasteles.html">Pasteles</a>
+                    <a href="cuenta.php">Iniciar Sesión</a>
+                </div>
+            </section>
+        </nav>
+    </header>
+    <main class="fondo">
+        </section>
+        <section>
+            <div class="titulo">
+                <h1>Calcula tu compra</h1>
+            </div>
+        </section>
+        <form class="letra-form2" action="calculo.js">
+            <div class="formulario">
+                <div class="grupo">
+                    <input type="text" name="" id="txt_PreProducto" required><span class="barra"></span>
+                    <label for="">Precio del Producto</label>
+                </div>
+                <div class="grupo">
+                    <label for="">Impuesto aplicado del 16% </label>
+                </div>
+                <br>
+                <div class="grupo">
+                    <label id="lbl_Impuestos" for=""></label>
+                </div>
+                <br>
+                <div class="grupo">
+                    <label for="">Gastos por Envio es de $30 pesos. </label>
+                </div>
+                <br>
+                <div class="grupo">
+                    <label id="lbl_MontoPagar" for=""></label>
+                </div>
+                <br>
+                <br>
+                <br>
+                <button type="button" id="btn_calcular" onclick=CalculaPrecioTotal()>Calcular</button>
+            </div>
+        </form>
+    </main>
+
+    <div class="linea"></div>
+    <footer>
+        <div class="contenedor-footer">
+            <div class="content-foo">
+                <div>
+                    <h3>Ubicados en...</h3>
+                </div>
+                <div>
+                    <p>Paseo de las Minas</p>
+                    <p>Calle: Av.Titano, S/N</p>
+                </div>
+            </div>
+            <div class="content-foo">
+                <div>
+                    <h3>Ordena tu pedido al...</h3>
+                </div>
+                <div>
+                    <p>81 10 08 38 37</p>
+                </div>
+            </div>
+            <div class="content-foo">
+                <div>
+                    <h3>Horario de Servicio...</h3>
+                </div>
+                <div>
+                    <p>De Lunes a Viernes</p>
+                    <p>10:00 a.m a 9:00 p.m</p>
+                </div>
+            </div>
+            <div class="content-foo">
+                <div>
+                    <h3>Redes Sociales</h3>
+                </div>
+                <div>
+                    <box-icon href="" name='facebook-square' type='logo' animation='burst' color='#0032ff'></box-icon>
+                    <box-icon href="" name='instagram-alt' type='logo' animation='burst' color='#ff4b00'></box-icon>
+                    <box-icon href="" name='whatsapp-square' type='logo' animation='burst' color='#00c832'></box-icon>
+                </div>
+            </div>
+        </div>
+        <h2 class="titulo-final">&copy; Design | Equipo Dinamita</h2>
+        <p class="content-titulo-final">Derechos Reservados</p>
+    </footer>
+    <script src="https://unpkg.com/boxicons@latest/dist/boxicons.js"></script>
+    <script src="https://kit.fontawesome.com/bc362696c7.js" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
